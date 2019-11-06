@@ -35,8 +35,11 @@ module.exports = function (config) {
       "karma-junit-reporter"
     ],
 
+    reporters: ['progress', 'junit'],
+
     junitReporter: {
       outputFile: "test_out/unit.xml",
+      useBrowserName: false,
       suite: "unit"
     }
 
